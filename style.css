@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100vw;
+}
+
+:root{
+    --left-width : 20vw;
+    --left-color : #1992d4;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+}
+
+#left{
+    position: fixed;
+    width: var(--left-width);
+    background-color: var(--left-color);
+    height: 100vh;
+    padding-bottom: 10vh;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#right{
+    background-color: #e2e8f0;
+    margin-left: var(--left-width);
+}
+
+.navbar{
+    height: 20vh;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 0px 50px;
+    
+}
+
+.a2nd {
+  font-size: 17px;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 50px;
+  border: 0px solid lightblue;
+  background-color: var(--left-color);
+  color: white;
+}
+
+.thumbnail-small{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url("pic.png");
+    background-position: center;      
+    background-size: cover;
+}
+
+.first-line{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+    padding: 15px 0px;
+}
+
+.second-line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-line{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.right-line{
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+
+
+.thumbnail-big{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url("pic.png");
+    background-position: center;      
+    background-size: cover;
+    margin: 0px 10px;
+}
+
+.salutation{
+    display: flex;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+input[type="text"] {
+    border: 0px solid #ccc;
+    background-color: #e2e8f0;
+    border-radius: 18px;
+    padding: 8px 12px;
+    width: 350px;
+}
+
+input[type="text"]:focus {
+    background-color: #efefef;
+    outline: none;
+}
+
+#content{
+    display: flex;
+    gap: 10px;
+    background-color: #e2e8f0;
+    padding: 24px 16px ;
+    
+}
+
+
+
+.right1{
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - var(--left-width) + 100%);
+}
+
+.right-cards{
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(0,1fr);
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.left1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.left-cards{
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 10px;
+}
+
+/* ------------------------------ */
+
+.card {
+    border-left: 8px solid #f0b429;
+    padding-left: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+  
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+  
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.card1 {
+    padding-left: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.card1 h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+  
+.card1 p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+
+
+.salutation1{
+    display: flex;
+}
+
+.salutation1 h3{
+    font-size: 1em;
+}
+
+.salutation1 p{
+    font-size: 0.5em;
+}
+
+.paragrap{
+    margin: 10px 0px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.paragrap:last-child{
+    border-bottom: none;
+
+}
+
+.btn{
+    align-self: flex-end;
+    justify-self: center;
+    margin: 15px;
+}
+
+.btns{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+
+.title{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.title1{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.thicc{
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.group1{
+    display: flex;
+    flex-direction: column;
+}
+
+.group1 button{
+    margin: 12px;
+    color: white;
+}
+
+.group2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.group2 button{
+    margin: 12px;
+    color: white;
+}
