@@ -58,7 +58,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-image: url("pic.png");
+    background-image: url("./buttons/pic.png");
     background-position: center;      
     background-size: cover;
 }
@@ -93,7 +93,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-image: url("pic.png");
+    background-image: url("./buttons/pic.png");
     background-position: center;      
     background-size: cover;
     margin: 0px 10px;
